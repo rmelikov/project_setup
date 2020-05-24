@@ -10,6 +10,7 @@ title: Setting Up a New Project
   with Virtual Environments
 subtitle: Python and R Project
   with Virtual Environments
+author: 'https://github.com/rmelikov/project_setup'
 # author:
   # name: Ramin Melikov
   # affiliation:
