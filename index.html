@@ -370,17 +370,17 @@ summary {
 <p>Definitely will need <strong>Anaconda</strong>. I tried <code>pipenv</code> and <code>renv</code> and <code>vurtualenv</code> but I couldn’t get them to work as well as <strong>Anaconda</strong> did. It seems to be the best for when you need to create virtual environments for each project. <em>(I also tried <strong>Atom</strong> and <strong>VSCode</strong>, and I happen to be a subscriber to <strong>PyCharm</strong>, and I think it is worth paying for <strong>PyCharm</strong>. It is actually totally worth paying for the bundle, especially if you like <strong>DataGrip</strong>.)</em></p>
 <p>All of the projects are located in the <code>D:\git</code> folder (for me). We’ll refer to it as a home or projects folder.</p>
 <p>Create a project folder in the home directory <strong>and from that new directory</strong>, execute the following command to create a <code>Python</code> environment. Make sure you are issuing these commands into the <strong>Anaconda Prompt</strong> that came with <strong>Anaconda</strong>.</p>
-<pre><code># this command creates a python environment
+<pre class="markdown"><code># this command creates a python environment
 conda create --prefix pyvenv python=3.7</code></pre>
 <p>Note: The <code>--prefix</code> makes it so that the <code>pyvenv</code> environment will be installed in the project directory instead of in the Conda’s default location. If you have multiple drives, Conda will default to something like <code>C</code> drive. This helps with the control of where you want to install that virtual environment folder.</p>
 <p>Activate the created environment.</p>
-<pre><code># this command activates Python environment
+<pre class="markdown"><code># this command activates Python environment
 conda activate D:\git\&lt;project_name&gt;\pyvenv</code></pre>
 <p>Now create an <code>R</code> environment for your project.</p>
-<pre><code># this command creates an R environment
+<pre class="markdown"><code># this command creates an R environment
 conda create --prefix rvenv r-essentials r-base</code></pre>
 <p>This environment needs to be activated as well.</p>
-<pre><code># this command activates R environment
+<pre class="markdown"><code># this command activates R environment
 conda activate D:\git\&lt;project_name&gt;\rvenv</code></pre>
 <p>After this, point your IDE to these environments and you should be good to go. In <strong>PyCharm</strong>, go to <code>File/Settings/Project</code> and setup both <code>Python</code> and <code>R</code> interpreters by pointing to existing Anaconda environments.</p>
 <p>That’s all!</p>
