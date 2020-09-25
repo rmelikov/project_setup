@@ -57,7 +57,7 @@ that came with **Anaconda**.
 
 ````markdown
 # this command creates a python environment
-conda create --prefix pyvenv python=3.7
+conda create --prefix pyvenv python=3.7 --no-default-packages
 ````
 
 Note: The `--prefix` makes it
